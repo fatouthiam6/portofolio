@@ -1,0 +1,175 @@
+/* Container des compétences */
+.competencies-container {
+  padding: 1.5rem;
+  background-color: #191919;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Permet aux blocs de se placer sur plusieurs lignes */
+  justify-content: center; /* Centrer les blocs horizontalement */
+}
+
+/* Titre de la section avec animation */
+.boomerang-title {
+  color: #ffe0f0;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: boomerang 3s infinite;
+}
+
+@keyframes boomerang {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Blocs de compétences */
+.competency-block {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #FFC0CB;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacement égal entre les éléments */
+  width: 250px;
+  height: 150px; /* Réduit la hauteur des blocs */
+  background-color: #1e1e1e;
+}
+
+.competency-block:hover {
+  transform: scale(1.05);
+}
+
+.competency-block.active {
+  background-color: #FFE4E1;
+}
+
+/* Titre de catégorie */
+.category-title {
+  color: #FFC0CB;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Liste des items de compétences */
+.competency-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacement entre les icônes */
+  justify-content: center; /* Centrer les icônes */
+}
+
+/* Item de compétence individuel */
+.competency-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* Logos des items de compétence */
+.logo {
+  width: 30px;
+  height: 30px;
+  color: #FFC0CB;
+  transition: transform 0.3s ease;
+}
+
+.competency-item:hover .logo {
+  transform: scale(1.1);
+}
+
+/* Réglages pour les écrans de taille large (plus de 1024px) */
+@media (min-width: 1024px) {
+  .competency-block {
+    width: 300px;
+    height: 180px; /* Légèrement plus grands sur les écrans larges */
+  }
+
+  .boomerang-title {
+    font-size: 2.5rem; /* Agrandir le titre */
+  }
+
+  .category-title {
+    font-size: 1.75rem; /* Agrandir le titre des catégories */
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px; /* Agrandir les logos */
+  }
+}
+
+/* Réglages pour les tablettes et grands mobiles (écrans entre 768px et 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .competency-block {
+    width: 280px; /* Taille des blocs un peu plus petite */
+    height: 170px;
+  }
+
+  .boomerang-title {
+    font-size: 2.2rem;
+  }
+
+  .category-title {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Réglages pour les petits écrans (mobiles) */
+@media (max-width: 768px) {
+  .competency-block {
+    width: 220px; /* Réduire la largeur des blocs */
+    height: 160px;
+  }
+
+  .boomerang-title {
+    font-size: 2rem; /* Taille du titre plus petite */
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px; /* Taille des logos plus petite */
+  }
+}
+
+/* Réglages pour les très petits écrans (mobiles très petits) */
+@media (max-width: 480px) {
+  .competency-block {
+    width: 200px; /* Réduire encore plus la taille des blocs */
+    height: 150px;
+  }
+
+  .boomerang-title {
+    font-size: 1.8rem;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .competency-items {
+    flex-direction: column; /* Les icônes passent en colonne */
+    gap: 8px; /* Espacement réduit */
+  }
+}

@@ -1,0 +1,140 @@
+/* src/components/Experience.css */
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a ;/* src/components/Experience.css */
+
+
+  .experience-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ffe0f0;
+    font-style: italic ;
+  }
+  
+  .experience-block {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: left;
+  }
+  
+  .role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffe0f0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .company-date {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+  
+  .experience-details {
+    margin-top: 1rem;
+    font-size: 0rem;
+  }
+  
+  .experience-details h4 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 1rem;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out; /* Animation d'apparition */
+}
+  
+.experience-details p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    animation: fadeIn 0.7s ease-in-out; /* Animation d'apparition */
+}
+  ;
+  }
+  
+  .experience-title {
+    font-size:1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .experience-block {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a90e2;
+    margin-bottom: 0.5rem;
+  }
+  
+  .company-date {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.3rem 0;
+  }
+  
+  .experience-details {
+    margin-top: 1rem;
+  }
+  
+  .experience-details h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+
+  }
+  .experience-details h4::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin: 0.5rem auto;
+    background-color: #4a4a4a;
+}
+  .location-icon {
+    margin-right: 0.3rem;
+    color: #ffe0f0; /* Couleur pour l'icône */
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+  
+  .experience-details p {
+    font-size: 0rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  .experience-details h4:last-child {
+    color: #28a745; /* Vert pour souligner la refonte */
+  }
+  

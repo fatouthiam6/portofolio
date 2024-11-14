@@ -1,0 +1,288 @@
+.projects-section {
+  padding: 2rem;
+  background-color: #ffe0f0;
+  text-align: center;
+  color:  #ffe0f0;
+}
+
+h2 {
+  padding: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffe0f0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(100%);
+  transition: transform 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.project-card:hover .project-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #ffe0f0;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ffb6b6;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  .project-card {
+    height: 180px;
+  }
+
+  .project-info {
+    padding: 0.5rem;
+  }
+
+  .btn {
+    width: 100px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.close-btn:hover {
+  background-color: rgb(255, 170, 170);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal .buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 15;
+}
+
+.project-card.active {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #ffe0f0;
+}
+
+.arrow-btn:hover {
+  color: #ffe0f0;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+
+}
+
+/* Additional Responsive Modal Styles */
+.modal-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+.screenshot-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.screenshots-container {
+  position: relative;
+  display: inline-block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: #ffe0f0;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close-btn:hover {
+  color: #adadad;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+

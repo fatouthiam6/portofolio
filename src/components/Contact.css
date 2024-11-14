@@ -1,0 +1,235 @@
+/* Conteneur du formulaire */
+.contact-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #232323; /* Couleur de fond plus douce */
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px #3b3939;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-container h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffe0f0; /* Rose clair pour le titre */
+    margin-bottom: 15px;
+    animation: bounceIn 1s ease-in-out;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .contact-container p {
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #3b3939;
+    border-radius: 8px;
+    background-color: #3b3939;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    color: #282828; /* Texte des champs de saisie */
+    animation: fadeInField 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeInField {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #ffb3d9; /* Bordure rose clair */
+    outline: none;
+    background-color: #3b3939;
+    box-shadow: 0 0 10px rgba(255, 0, 150, 0.3);
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"] {
+    height: 50px;
+  }
+  
+  form textarea {
+    resize: none;
+    min-height: 150px;
+  }
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #bbb; /* Texte des placeholders */
+    opacity: 1; /* Assurer qu'il soit bien visible */
+  }
+  
+  form button {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #3b3939;
+    background-color: #ffe0f0; /* Couleur rose clair */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    animation: fadeInButton 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeInButton {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  form button:hover {
+    background-color: #ff66b2; /* Teinte plus foncée au survol */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 0, 150, 0.3);
+  }
+  
+  form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  form .social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  form .social-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff80bf; /* Couleur des liens */
+    transition: color 0.3s;
+  }
+  
+  form .social-links a:hover {
+    color: #ff66b2; /* Couleur plus foncée au survol */
+  }
+  
+  /* Styles responsive pour les petits écrans */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    .contact-container h2 {
+      font-size: 24px;
+    }
+  
+    form {
+      gap: 15px;
+    }
+  
+    form input,
+    form textarea {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    form button {
+      padding: 12px 18px;
+      font-size: 14px;
+    }
+  
+    form .social-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      padding: 15px;
+    }
+  
+    .contact-container h2 {
+      font-size: 20px;
+    }
+  
+    form {
+      gap: 10px;
+    }
+  
+    form input,
+    form textarea {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    form button {
+      padding: 10px 15px;
+      font-size: 12px;
+    }
+  
+    form .social-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  
