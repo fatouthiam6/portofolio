@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'; // Assurez-vous d'importer u
 import Navbar from './components/Navbar';
 import Experience from './components/Experience';
 import Projects from './components/Projets';
-import Competences from './components/competences';
+import Competences from './components/Competences';
 import Contact from './components/Contact';
 import './App.css';
 
