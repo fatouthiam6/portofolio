@@ -131,7 +131,7 @@
 @media (max-width: 768px) {
   .competency-block {
     width: 220px; /* Réduire la largeur des blocs */
-    height: 160px;
+    height: 250px;
   }
 
   .boomerang-title {
