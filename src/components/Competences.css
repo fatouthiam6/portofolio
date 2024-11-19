@@ -130,10 +130,11 @@
 /* Réglages pour les petits écrans (mobiles) */
 @media (max-width: 768px) {
   .competency-block {
-    width: 220px; /* Réduire la largeur des blocs */
-    height: 250px;
-  }
-
+      width: 90%; /* Utilise une largeur plus large, mais reste dans les limites de l'écran */
+      height: auto; /* Ajuste la hauteur pour s'adapter au contenu */
+      margin: 0.5rem auto; /* Ajoute une marge automatique pour centrer les blocs */
+    }
+  
   .boomerang-title {
     font-size: 2rem; /* Taille du titre plus petite */
   }
