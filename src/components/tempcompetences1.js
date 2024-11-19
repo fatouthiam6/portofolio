@@ -21,7 +21,7 @@ const competencies = [
         </div>
       ) },
       { name: "C#/C", icon: <FaDatabase style={{ color: '#ffe0f0' }} /> },
-      { name: "Dart", icon: <FaDatabase style={{ color: '#ffe0f0' }} /> },
+
     ]
   },
   {
