@@ -8,20 +8,11 @@ const competencies = [
   {
     category: "Langages de Programmation",
     items: [
-      { name: "Python/SQL", icon: (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <FaPython style={{ color: '#ffe0f0' }} />
-          <FaDatabase style={{ color: '#ffe0f0', marginLeft: '8px' }} />
-        </div>
-      ) },
-      { name: "Java/JavaScript", icon: (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <FaJava style={{ color: '#ffe0f0' }} />
-          <FaJs style={{ color: '#ffe0f0', marginLeft: '8px' }} />
-        </div>
-      ) },
+      { name: "Python", icon: <FaPython style={{ color: '#ffe0f0' }} /> },
+      { name: "Java/JavaScript", icon: <FaJava style={{ color: '#ffe0f0' }} /> },
+      { name: "SQL", icon: <FaDatabase style={{ color: '#ffe0f0' }} /> },
       { name: "C#/C", icon: <FaDatabase style={{ color: '#ffe0f0' }} /> },
-      { name: "Dart", icon: <FaDatabase style={{ color: '#ffe0f0' }} /> },
+
     ]
   },
   {
