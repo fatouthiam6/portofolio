@@ -110,7 +110,7 @@
 @media (max-width: 1024px) and (min-width: 768px) {
   .competency-block {
     width: 280px; /* Taille des blocs un peu plus petite */
-    height: 170px;
+    height: 270px;
   }
 
   .boomerang-title {
@@ -151,7 +151,7 @@
 /* Réglages pour les très petits écrans (mobiles très petits) */
 @media (max-width: 480px) {
   .competency-block {
-    width: 200px; /* Réduire encore plus la taille des blocs */
+    width: 250px; /* Réduire encore plus la taille des blocs */
     height: 200px;
   }
 
