@@ -312,25 +312,26 @@ body {
 }
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: row; /* Conserver la disposition horizontale */
+    flex-direction: row; /* Disposition horizontale */
     justify-content: center; /* Centrer les liens */
     gap: 15px; /* Ajouter un espacement entre les éléments */
   }
 
   .navbar .nav-link {
-    padding: 5px 10px; /* Ajuster le padding si nécessaire */
     font-size: 16px; /* Adapter la taille de la police */
+    padding: 5px 10px; /* Ajuster le padding */
   }
 }
 
+/* Navbar pour très petits écrans (max-width: 480px) */
 @media (max-width: 480px) {
   .navbar ul {
     flex-direction: row; /* Toujours horizontal */
-    justify-content: space-between; /* Distribution des liens */
+    justify-content: space-between; /* Espacement égal entre les éléments */
   }
 
   .navbar .nav-link {
-    font-size: 14px; /* Police légèrement plus petite sur petits écrans */
-    padding: 5px; /* Moins de padding pour économiser de l'espace */
+    font-size: 14px; /* Police plus petite pour économiser de l'espace */
+    padding: 5px; /* Moins de padding pour plus de place */
   }
 }
