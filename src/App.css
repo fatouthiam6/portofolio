@@ -16,6 +16,7 @@
 .navbar ul {
   display: flex;
   list-style-type: none;
+  flex-direction: row; 
   margin: 0;
   padding: 0;
 }
@@ -312,26 +313,26 @@ body {
 }
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column; /* Disposition horizontale */
-    justify-content: center; /* Centrer les liens */
-    gap: 15px; /* Ajouter un espacement entre les éléments */
-  }
-
-  .navbar .nav-link {
-    font-size: 16px; /* Adapter la taille de la police */
-    padding: 5px 10px; /* Ajuster le padding */
-  }
-}
-
-/* Navbar pour très petits écrans (max-width: 480px) */
-@media (max-width: 480px) {
-  .navbar ul {
-    flex-direction: column; /* Toujours horizontal */
-    justify-content: space-between; /* Espacement égal entre les éléments */
+    flex-direction: row; /* Forcer l'horizontalité */
+    justify-content: center; /* Centrer les éléments */
+    gap: 10px; /* Espacement réduit */
   }
 
   .navbar .nav-link {
     font-size: 14px; /* Police plus petite pour économiser de l'espace */
-    padding: 5px; /* Moins de padding pour plus de place */
+    padding: 5px; /* Moins de padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: row; /* Reste horizontal */
+    justify-content: center; /* Centrer les liens */
+    gap: 5px; /* Espacement réduit au minimum */
+  }
+
+  .navbar .nav-link {
+    font-size: 12px; /* Encore plus petit pour les écrans très étroits */
+    padding: 3px 5px; /* Réduire le padding */
   }
 }
