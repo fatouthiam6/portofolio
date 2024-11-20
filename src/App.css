@@ -20,11 +20,13 @@
   list-style-type: none;
   flex-direction: row; 
   margin: 0;
-  padding: 0;
+  padding: 0 40px; /* Ajouter un espace à gauche et à droite de la liste */
+  width: 100%; /* Étendre la liste sur toute la largeur */
+  justify-content: space-between; /* Espacer les éléments uniformément */
 }
 
 .navbar li {
-  margin-left: 30px;
+  margin: 0 10px;
 }
 
 .navbar .nav-link {
@@ -205,7 +207,7 @@ html {
 @media (max-width: 480px) {
  
   .welcome-container {
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px;
   }
 
