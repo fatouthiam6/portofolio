@@ -312,7 +312,7 @@ body {
 }
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: row; /* Disposition horizontale */
+    flex-direction: column; /* Disposition horizontale */
     justify-content: center; /* Centrer les liens */
     gap: 15px; /* Ajouter un espacement entre les éléments */
   }
@@ -326,7 +326,7 @@ body {
 /* Navbar pour très petits écrans (max-width: 480px) */
 @media (max-width: 480px) {
   .navbar ul {
-    flex-direction: row; /* Toujours horizontal */
+    flex-direction: column; /* Toujours horizontal */
     justify-content: space-between; /* Espacement égal entre les éléments */
   }
 
