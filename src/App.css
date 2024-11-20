@@ -28,6 +28,13 @@
 .navbar li {
   margin: 0 10px;
 }
+.navbar li:first-child {
+  margin-left: 20px; /* Ajout d'un espace à gauche de "Accueil" */
+}
+
+.navbar li:last-child {
+  margin-right: 20px; /* Ajout d'un espace à droite de "Contact" */
+}
 
 .navbar .nav-link {
   text-decoration: none;
@@ -291,8 +298,18 @@ body {
     flex-direction: row; /* Forcer l'horizontalité */
     justify-content: center; /* Centrer les éléments */
     gap: 10px; /* Espacement réduit */
+    padding: 0 15px;
+  }
+  .navbar li:first-child {
+    margin-left: 10px; /* Ajuster l'espace à gauche de "Accueil" */
   }
 
+  .navbar li:last-child {
+    margin-right: 10px; /* Ajuster l'espace à droite de "Contact" */
+  }
+
+  .navbar .nav-link {
+    font-size: 16px; }
   .navbar .nav-link {
     font-size: 14px; /* Police plus petite pour économiser de l'espace */
     padding: 5px; /* Moins de padding */
